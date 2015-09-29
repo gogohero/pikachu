@@ -40,25 +40,12 @@ namespace WindowsFormsApplication1
             else if (ev.KeyCode == Keys.Left) x -= 5;
             else if (ev.KeyCode == Keys.Up) y -= 5;
             else if (ev.KeyCode == Keys.Down) y += 5;
-            if (!pictureBox1.Bounds.IntersectsWith(pictureBox6.Bounds))
-
+            if (!pictureBox1.Bounds.IntersectsWith(pictureBox6.Bounds) == false)
             {
-             
+                pictureBox1.Location = new Point(x, y);
             }
             label1.Text = x.ToString() + " " + y.ToString();
             pictureBox1.Location = new Point(x, y);
-
-
-
-
-
-
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
