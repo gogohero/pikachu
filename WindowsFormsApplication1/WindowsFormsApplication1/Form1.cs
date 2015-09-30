@@ -36,16 +36,54 @@ namespace WindowsFormsApplication1
 
             x = pictureBox1.Location.X;
             y = pictureBox1.Location.Y;
-            if (ev.KeyCode == Keys.Right) x += 5;
-            else if (ev.KeyCode == Keys.Left) x -= 5;
-            else if (ev.KeyCode == Keys.Up) y -= 5;
-            else if (ev.KeyCode == Keys.Down) y += 5;
-            if (!pictureBox1.Bounds.IntersectsWith(pictureBox6.Bounds) == false)
+
+
+            if (ev.KeyCode == Keys.Right)
             {
+
+                x += 5;
+                pictureBox1.Location = new Point(x, y);
+                if (pictureBox1.Bounds.IntersectsWith(pictureBox6.Bounds))
+                {
+                    x -= 5;
+                }
                 pictureBox1.Location = new Point(x, y);
             }
-            label1.Text = x.ToString() + " " + y.ToString();
-            pictureBox1.Location = new Point(x, y);
+            else if (ev.KeyCode == Keys.Left)
+            {
+
+                x -= 5;
+                pictureBox1.Location = new Point(x, y);
+                if (pictureBox1.Bounds.IntersectsWith(pictureBox6.Bounds))
+                {
+                    x += 5;
+                }
+                pictureBox1.Location = new Point(x, y);
+            }
+            else if (ev.KeyCode == Keys.Up)
+            {
+                y -= 5; pictureBox1.Location = new Point(x, y);
+                if (pictureBox1.Bounds.IntersectsWith(pictureBox6.Bounds))
+                {
+                    y += 5;
+                }
+                pictureBox1.Location = new Point(x, y);
+            }
+
+            else if (ev.KeyCode == Keys.Down)
+            {
+                y += 5;
+                pictureBox1.Location = new Point(x, y);
+                if (pictureBox1.Bounds.IntersectsWith(pictureBox6.Bounds))
+                {
+                    y -= 5;
+                }
+                pictureBox1.Location = new Point(x, y);
+            }
+
+
+
         }
+       
     }
 }
