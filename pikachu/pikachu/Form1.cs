@@ -42,29 +42,37 @@ namespace pikachu
             {
 
                 x += 5;
-                x1 += 5;
+                x1 += 10;
                 pictureBox1.Location = new Point(x, y);
                 pictureBox2.Location = new Point(x, y);
-                timer1.Enabled = true;
-              //  
+                pictureBox1.Image = Image.FromFile("../../Resources/6.png");
+                pictureBox2.Image = Image.FromFile("../../Resources/7.png");
+                pictureBox2.Visible = pictureBox2.Visible == true ? false : true;
+                
+
                 if (pictureBox1.Bounds.IntersectsWith(pictureBox3.Bounds))
                 {
-                    x -= 5;
-                    x1 -= 5;
+                    x -= 10;
+                    x1 -= 10;
                     timer1.Enabled = false;
                 }
                 pictureBox1.Location = new Point(x, y);
                 pictureBox2.Location = new Point(x, y);
-               // timer1.Enabled = false;
+              // 
 
             }
+
             else if (ev.KeyCode == Keys.Left)
             {
 
                 x -= 5;
                 x1 -= 5;
+               // pictureBox1.
                 pictureBox1.Location = new Point(x, y);
                 pictureBox2.Location = new Point(x, y);
+                pictureBox1.Image = Image.FromFile("../../Resources/6.2.png");
+                pictureBox2.Image = Image.FromFile("../../Resources/7.2.png");
+                pictureBox2.Visible = pictureBox2.Visible == true ? false : true;
                 if (pictureBox1.Bounds.IntersectsWith(pictureBox3.Bounds))
                 {
                     x += 5;
@@ -79,6 +87,9 @@ namespace pikachu
                 y1 -= 5;
                 pictureBox1.Location = new Point(x, y);
                 pictureBox2.Location = new Point(x, y);
+                pictureBox1.Image = Image.FromFile("../../Resources/6.3.png");
+                pictureBox2.Image = Image.FromFile("../../Resources/7.3.png");
+                pictureBox2.Visible = pictureBox2.Visible == true ? false : true;
                 if (pictureBox1.Bounds.IntersectsWith(pictureBox3.Bounds))
                 {
                     y += 5;
@@ -94,6 +105,9 @@ namespace pikachu
                 y1 += 5;
                 pictureBox1.Location = new Point(x, y);
                 pictureBox2.Location = new Point(x, y);
+                pictureBox1.Image = Image.FromFile("../../Resources/6.3.png");
+                pictureBox2.Image = Image.FromFile("../../Resources/7.3.png");
+                pictureBox2.Visible = pictureBox2.Visible == true ? false : true;
                 if (pictureBox1.Bounds.IntersectsWith(pictureBox3.Bounds))
                 {
                     y -= 5;

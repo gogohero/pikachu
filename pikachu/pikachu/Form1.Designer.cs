@@ -41,18 +41,18 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::pikachu.Properties.Resources._7;
-            this.pictureBox2.Location = new System.Drawing.Point(135, 226);
+            this.pictureBox2.Location = new System.Drawing.Point(126, 220);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(123, 58);
+            this.pictureBox2.Size = new System.Drawing.Size(123, 117);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::pikachu.Properties.Resources._6;
-            this.pictureBox1.Location = new System.Drawing.Point(135, 226);
+            this.pictureBox1.Location = new System.Drawing.Point(126, 220);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(114, 58);
+            this.pictureBox1.Size = new System.Drawing.Size(114, 117);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
