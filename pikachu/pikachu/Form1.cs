@@ -105,8 +105,8 @@ namespace pikachu
                 y1 += 5;
                 pictureBox1.Location = new Point(x, y);
                 pictureBox2.Location = new Point(x, y);
-                pictureBox1.Image = Image.FromFile("../../Resources/6.3.png");
-                pictureBox2.Image = Image.FromFile("../../Resources/7.3.png");
+                pictureBox1.Image = Image.FromFile("../../Resources/6.4.png");
+                pictureBox2.Image = Image.FromFile("../../Resources/7.4.png");
                 pictureBox2.Visible = pictureBox2.Visible == true ? false : true;
                 if (pictureBox1.Bounds.IntersectsWith(pictureBox3.Bounds))
                 {
