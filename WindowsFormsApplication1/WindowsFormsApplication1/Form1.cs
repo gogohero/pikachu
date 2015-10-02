@@ -21,28 +21,19 @@ namespace WindowsFormsApplication1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
-
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-
-
-
-
-
-
         }
         private void Form1_KeyDown(object sender, KeyEventArgs ev)
         {
-
             x = pictureBox1.Location.X;
             y = pictureBox1.Location.Y;
             if (ev.KeyCode == Keys.Right) x += 5;
             else if (ev.KeyCode == Keys.Left) x -= 5;
             else if (ev.KeyCode == Keys.Up) y -= 5;
             else if (ev.KeyCode == Keys.Down) y += 5;
-            if (!pictureBox1.Bounds.IntersectsWith(pictureBox6.Bounds) == false)
+            if (pictureBox1 == pictureBox2)
             {
-                pictureBox1.Location = new Point(x, y);
+                
             }
             label1.Text = x.ToString() + " " + y.ToString();
             pictureBox1.Location = new Point(x, y);
