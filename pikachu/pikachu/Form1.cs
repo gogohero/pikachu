@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -39,7 +40,7 @@ namespace pikachu
             int y = pictureBox1.Location.Y;
             int x1 = pictureBox2.Location.X;
             int y1 = pictureBox2.Location.Y;
-            PictureBox[] walls = { pictureBox6, pictureBox3, pictureBox7, pictureBox8, pictureBox5, pictureBox9, };
+            PictureBox[] walls = { pictureBox6, pictureBox3, pictureBox7, pictureBox8, pictureBox5, pictureBox9, pictureBox12, pictureBox13, pictureBox20, pictureBox28, pictureBox27, pictureBox26, pictureBox25, pictureBox24, pictureBox23, pictureBox11, pictureBox14, pictureBox10 };
 
             if (ev.KeyCode == Keys.Right)
             {
@@ -134,67 +135,75 @@ namespace pikachu
         private void Enemy()
         {
             int x = pictureBox4.Location.X;
-            int y = pictureBox4.Location.Y;
-            Random rand = new Random();
-            Random rand2 = new Random();
+            int y = 300;
+
+
             pictureBox4.Location = new Point(x, y);
             label2.Text = (pictureBox4.Location.Y).ToString();
             if (!pictureBox4.Bounds.IntersectsWith(pictureBox3.Bounds))
             {
 
-                if (y>0)
+
+                while (y > 0)
                 {
-                    y -= 5;
+                    y -= 1;
                     pictureBox4.Location = new Point(x, y);
                     label2.Text = (pictureBox4.Location.Y).ToString();
+
                 }
-                
+                /* while (y < 300)
+                 {
+                     y += 5;
+                     pictureBox4.Location = new Point(x, y);
+                     label2.Text = (pictureBox4.Location.Y).ToString();
 
-
-
+                 }*/
             }
-            else if(y==0)
+            int x2 = pictureBox4.Location.X;
+            int y2 = pictureBox4.Location.Y;
+            pictureBox21.Location = new Point(x, y);
+        
+        label2.Text = (pictureBox21.Location.Y).ToString();
+
+            if (!pictureBox21.Bounds.IntersectsWith(pictureBox8.Bounds))
             {
-                while (true)
+                while (x > 0)
                 {
+                    x -= 1;
+                    pictureBox21.Location = new Point(x, y);
+                    label2.Text = (pictureBox4.Location.Y).ToString();
 
-                    if (!pictureBox4.Bounds.IntersectsWith(pictureBox3.Bounds))
-                    {
-                        y += 10;
-                        pictureBox4.Location = new Point(x, y);
-                        label2.Text = (pictureBox4.Location.Y).ToString();
-                    }
                 }
+               
+            }
+        }
+
+        }
+        public class Charapter
+        {
+            PictureBox[] charapter;
+            int x, y;
+            public Charapter(PictureBox[] charapter, int x, int y)
+            {
+                this.charapter = charapter;
+                this.x = x;
+                this.y = y;
+            }
+            public PictureBox ViewNext(int i)
+            {
+                return charapter[i];
+            }
+        }
+        public class Wall
+        {
+            PictureBox wall;
+            int x, y;
+            public Wall(PictureBox wall, int x, int y)
+            {
+                this.wall = wall;
+                this.x = x;
+                this.y = y;
             }
 
         }
-
     }
-    public class Charapter
-    {
-        PictureBox[] charapter;
-        int x, y;
-        public Charapter(PictureBox[] charapter, int x, int y)
-        {
-            this.charapter = charapter;
-            this.x = x;
-            this.y = y;
-        }
-        public PictureBox ViewNext(int i)
-        {
-            return charapter[i];
-        }
-    }
-    public class Wall
-    {
-        PictureBox wall;
-        int x, y;
-        public Wall(PictureBox wall, int x, int y)
-        {
-            this.wall = wall;
-            this.x = x;
-            this.y = y;
-        }
-
-    }
-}
