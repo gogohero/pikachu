@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace pikachu
 {
-    
+
     public partial class Form1 : Form
     {
         public Form1()
@@ -20,15 +20,17 @@ namespace pikachu
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            timer1.Enabled = false;
+
+            timer1.Enabled = true;
 
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            pictureBox2.Visible = pictureBox2.Visible == true ? false : true;
 
+            Enemy();
         }
         private void Form1_KeyDown(object sender, KeyEventArgs ev)
         {
@@ -37,6 +39,7 @@ namespace pikachu
             int y = pictureBox1.Location.Y;
             int x1 = pictureBox2.Location.X;
             int y1 = pictureBox2.Location.Y;
+            PictureBox[] walls = { pictureBox6, pictureBox3, pictureBox7, pictureBox8, pictureBox5, pictureBox9, };
 
             if (ev.KeyCode == Keys.Right)
             {
@@ -48,17 +51,17 @@ namespace pikachu
                 pictureBox1.Image = Image.FromFile("../../Resources/6.png");
                 pictureBox2.Image = Image.FromFile("../../Resources/7.png");
                 pictureBox2.Visible = pictureBox2.Visible == true ? false : true;
-                
-
-                if (pictureBox1.Bounds.IntersectsWith(pictureBox3.Bounds))
+                for (int i = 0; i < walls.Length; i++)
                 {
-                    x -= 10;
-                    x1 -= 10;
-                    timer1.Enabled = false;
+                    if (pictureBox1.Bounds.IntersectsWith(walls[i].Bounds))
+                    {
+                        x -= 10;
+                        x1 -= 10;
+                        timer1.Enabled = false;
+                    }
+                    pictureBox1.Location = new Point(x, y);
+                    pictureBox2.Location = new Point(x, y);
                 }
-                pictureBox1.Location = new Point(x, y);
-                pictureBox2.Location = new Point(x, y);
-              // 
 
             }
 
@@ -67,19 +70,22 @@ namespace pikachu
 
                 x -= 5;
                 x1 -= 5;
-               // pictureBox1.
+                // pictureBox1.
                 pictureBox1.Location = new Point(x, y);
                 pictureBox2.Location = new Point(x, y);
                 pictureBox1.Image = Image.FromFile("../../Resources/6.2.png");
                 pictureBox2.Image = Image.FromFile("../../Resources/7.2.png");
                 pictureBox2.Visible = pictureBox2.Visible == true ? false : true;
-                if (pictureBox1.Bounds.IntersectsWith(pictureBox3.Bounds))
+                for (int i = 0; i < walls.Length; i++)
                 {
-                    x += 5;
-                    x1 += 5;
+                    if (pictureBox1.Bounds.IntersectsWith(walls[i].Bounds))
+                    {
+                        x += 5;
+                        x1 += 5;
+                    }
+                    pictureBox1.Location = new Point(x, y);
+                    pictureBox2.Location = new Point(x, y);
                 }
-                pictureBox1.Location = new Point(x, y);
-                pictureBox2.Location = new Point(x, y);
             }
             else if (ev.KeyCode == Keys.Up)
             {
@@ -90,13 +96,16 @@ namespace pikachu
                 pictureBox1.Image = Image.FromFile("../../Resources/6.3.png");
                 pictureBox2.Image = Image.FromFile("../../Resources/7.3.png");
                 pictureBox2.Visible = pictureBox2.Visible == true ? false : true;
-                if (pictureBox1.Bounds.IntersectsWith(pictureBox3.Bounds))
+                for (int i = 0; i < walls.Length; i++)
                 {
-                    y += 5;
-                    y1 += 5;
+                    if (pictureBox1.Bounds.IntersectsWith(walls[i].Bounds))
+                    {
+                        y += 5;
+                        y1 += 5;
+                    }
+                    pictureBox1.Location = new Point(x, y);
+                    pictureBox2.Location = new Point(x, y);
                 }
-                pictureBox1.Location = new Point(x, y);
-                pictureBox2.Location = new Point(x, y);
             }
 
             else if (ev.KeyCode == Keys.Down)
@@ -108,19 +117,57 @@ namespace pikachu
                 pictureBox1.Image = Image.FromFile("../../Resources/6.4.png");
                 pictureBox2.Image = Image.FromFile("../../Resources/7.4.png");
                 pictureBox2.Visible = pictureBox2.Visible == true ? false : true;
-                if (pictureBox1.Bounds.IntersectsWith(pictureBox3.Bounds))
+                for (int i = 0; i < walls.Length; i++)
                 {
-                    y -= 5;
-                    y1 -= 5;
+                    if (pictureBox1.Bounds.IntersectsWith(walls[i].Bounds))
+                    {
+                        y -= 5;
+                        y1 -= 5;
+                    }
+                    pictureBox1.Location = new Point(x, y);
+                    pictureBox2.Location = new Point(x, y);
                 }
-                pictureBox1.Location = new Point(x, y);
-                pictureBox2.Location = new Point(x, y);
             }
-            
 
 
         }
+        private void Enemy()
+        {
+            int x = pictureBox4.Location.X;
+            int y = pictureBox4.Location.Y;
+            Random rand = new Random();
+            Random rand2 = new Random();
+            pictureBox4.Location = new Point(x, y);
+            label2.Text = (pictureBox4.Location.Y).ToString();
+            if (!pictureBox4.Bounds.IntersectsWith(pictureBox3.Bounds))
+            {
 
+                if (y>0)
+                {
+                    y -= 5;
+                    pictureBox4.Location = new Point(x, y);
+                    label2.Text = (pictureBox4.Location.Y).ToString();
+                }
+                
+
+
+
+            }
+            else if(y==0)
+            {
+                while (true)
+                {
+
+                    if (!pictureBox4.Bounds.IntersectsWith(pictureBox3.Bounds))
+                    {
+                        y += 10;
+                        pictureBox4.Location = new Point(x, y);
+                        label2.Text = (pictureBox4.Location.Y).ToString();
+                    }
+                }
+            }
+
+        }
 
     }
     public class Charapter
