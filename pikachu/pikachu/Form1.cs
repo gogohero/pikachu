@@ -40,8 +40,10 @@ namespace pikachu
             int y = pictureBox1.Location.Y;
             int x1 = pictureBox2.Location.X;
             int y1 = pictureBox2.Location.Y;
+            int beersX = 12;
+            int beersY = 12;
             PictureBox[] walls = { pictureBox6, pictureBox3, pictureBox7, pictureBox8, pictureBox5, pictureBox9, pictureBox12, pictureBox13, pictureBox20, pictureBox28, pictureBox27, pictureBox26, pictureBox25, pictureBox24, pictureBox23, pictureBox11, pictureBox14, pictureBox10 };
-
+            PictureBox[] beers = { pictureBox15, pictureBox16, pictureBox17 };
             if (ev.KeyCode == Keys.Right)
             {
 
@@ -59,6 +61,16 @@ namespace pikachu
                         x -= 10;
                         x1 -= 10;
                         timer1.Enabled = false;
+                    }
+                    pictureBox1.Location = new Point(x, y);
+                    pictureBox2.Location = new Point(x, y);
+                }
+                for (int i = 0; i < beers.Length; i++)
+                {
+                    if (pictureBox1.Bounds.IntersectsWith(beers[i].Bounds))
+                    {
+                        beers[i].Location = new Point(beersX, beersY);
+                        beersX += 50;
                     }
                     pictureBox1.Location = new Point(x, y);
                     pictureBox2.Location = new Point(x, y);
@@ -87,6 +99,17 @@ namespace pikachu
                     pictureBox1.Location = new Point(x, y);
                     pictureBox2.Location = new Point(x, y);
                 }
+                for (int i = 0; i < beers.Length; i++)
+                {
+                    if (pictureBox1.Bounds.IntersectsWith(beers[i].Bounds))
+                    {
+                        
+                        beersX += 50;
+                        beers[i].Location = new Point(beersX, beersY);
+                    }
+                    pictureBox1.Location = new Point(x, y);
+                    pictureBox2.Location = new Point(x, y);
+                }
             }
             else if (ev.KeyCode == Keys.Up)
             {
@@ -107,6 +130,16 @@ namespace pikachu
                     pictureBox1.Location = new Point(x, y);
                     pictureBox2.Location = new Point(x, y);
                 }
+                for (int i = 0; i < beers.Length; i++)
+                {
+                    if (pictureBox1.Bounds.IntersectsWith(beers[i].Bounds))
+                    {
+                        beersX += 50;
+                        beers[i].Location = new Point(beersX, beersY);
+                    }
+                    pictureBox1.Location = new Point(x, y);
+                    pictureBox2.Location = new Point(x, y);
+                }
             }
 
             else if (ev.KeyCode == Keys.Down)
@@ -118,6 +151,7 @@ namespace pikachu
                 pictureBox1.Image = Image.FromFile("../../Resources/6.4.png");
                 pictureBox2.Image = Image.FromFile("../../Resources/7.4.png");
                 pictureBox2.Visible = pictureBox2.Visible == true ? false : true;
+
                 for (int i = 0; i < walls.Length; i++)
                 {
                     if (pictureBox1.Bounds.IntersectsWith(walls[i].Bounds))
@@ -128,6 +162,17 @@ namespace pikachu
                     pictureBox1.Location = new Point(x, y);
                     pictureBox2.Location = new Point(x, y);
                 }
+                for (int i = 0; i < beers.Length; i++)
+                {
+                    if (pictureBox1.Bounds.IntersectsWith(beers[i].Bounds))
+                    {
+                        beersX += 50;
+                        beers[i].Location = new Point(beersX, beersY);
+                    }
+                    pictureBox1.Location = new Point(x, y);
+                    pictureBox2.Location = new Point(x, y);
+                }
+
             }
 
 
@@ -178,8 +223,12 @@ namespace pikachu
             }
         }
 
+        private void pictureBox29_Click(object sender, EventArgs e)
+        {
+
         }
-        public class Charapter
+    }
+    public class Charapter
         {
             PictureBox[] charapter;
             int x, y;
