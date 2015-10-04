@@ -18,10 +18,11 @@ namespace pikachu
         {
             InitializeComponent();
         }
-
+        
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            pictureBox29.Visible = false;
+            pictureBox27.Visible = false;
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
 
             timer1.Enabled = true;
@@ -42,9 +43,12 @@ namespace pikachu
             int y1 = pictureBox2.Location.Y;
             int beersX = 12;
             int beersY = 12;
-            PictureBox[] walls = { pictureBox6, pictureBox3, pictureBox7, pictureBox8, pictureBox5, pictureBox9, pictureBox12, pictureBox13, pictureBox20, pictureBox28, pictureBox27, pictureBox26, pictureBox25, pictureBox24, pictureBox23, pictureBox11, pictureBox14, pictureBox10 };
+            PictureBox[] walls = { pictureBox6, pictureBox3, pictureBox7, pictureBox8, pictureBox5, pictureBox9, pictureBox12, pictureBox13, pictureBox20, pictureBox28, pictureBox26, pictureBox25, pictureBox24, pictureBox23, pictureBox11, pictureBox14, pictureBox10 };
             PictureBox[] beers = { pictureBox15, pictureBox16, pictureBox17 };
+            PictureBox[] monsters = { pictureBox21, pictureBox22, pictureBox4 };
+            PictureBox[] gameOver = { pictureBox29, pictureBox27};
             if (ev.KeyCode == Keys.Right)
+
             {
 
                 x += 5;
@@ -60,7 +64,6 @@ namespace pikachu
                     {
                         x -= 10;
                         x1 -= 10;
-                        timer1.Enabled = false;
                     }
                     pictureBox1.Location = new Point(x, y);
                     pictureBox2.Location = new Point(x, y);
@@ -74,6 +77,15 @@ namespace pikachu
                     }
                     pictureBox1.Location = new Point(x, y);
                     pictureBox2.Location = new Point(x, y);
+                }
+                for (int i = 0; i < monsters.Length; i++)
+                {
+                    if (pictureBox1.Bounds.IntersectsWith(monsters[i].Bounds))
+                    {
+                        pictureBox29.Visible = true;
+                        pictureBox27.Visible = true;
+                    }
+
                 }
 
             }
@@ -110,6 +122,15 @@ namespace pikachu
                     pictureBox1.Location = new Point(x, y);
                     pictureBox2.Location = new Point(x, y);
                 }
+                for (int i = 0; i < monsters.Length; i++)
+                {
+                    if (pictureBox1.Bounds.IntersectsWith(monsters[i].Bounds))
+                    {
+                        pictureBox29.Visible = true;
+                        pictureBox27.Visible = true;
+                    }
+
+                }
             }
             else if (ev.KeyCode == Keys.Up)
             {
@@ -139,6 +160,15 @@ namespace pikachu
                     }
                     pictureBox1.Location = new Point(x, y);
                     pictureBox2.Location = new Point(x, y);
+                }
+                for (int i = 0; i < monsters.Length; i++)
+                {
+                    if (pictureBox1.Bounds.IntersectsWith(monsters[i].Bounds))
+                    {
+                        pictureBox29.Visible = true;
+                        pictureBox27.Visible = true;
+                    }
+
                 }
             }
 
@@ -172,6 +202,15 @@ namespace pikachu
                     pictureBox1.Location = new Point(x, y);
                     pictureBox2.Location = new Point(x, y);
                 }
+                for (int i = 0; i < monsters.Length; i++)
+                {
+                    if (pictureBox1.Bounds.IntersectsWith(monsters[i].Bounds))
+                    {
+                        pictureBox29.Visible = true;
+                        pictureBox27.Visible = true;
+                    }
+
+                }
 
             }
 
@@ -179,47 +218,83 @@ namespace pikachu
         }
         private void Enemy()
         {
-            int x = pictureBox4.Location.X;
-            int y = 300;
 
-
-            pictureBox4.Location = new Point(x, y);
-            label2.Text = (pictureBox4.Location.Y).ToString();
-            if (!pictureBox4.Bounds.IntersectsWith(pictureBox3.Bounds))
-            {
-
-
-                while (y > 0)
-                {
-                    y -= 1;
-                    pictureBox4.Location = new Point(x, y);
-                    label2.Text = (pictureBox4.Location.Y).ToString();
-
-                }
-                /* while (y < 300)
-                 {
-                     y += 5;
-                     pictureBox4.Location = new Point(x, y);
-                     label2.Text = (pictureBox4.Location.Y).ToString();
-
-                 }*/
-            }
-            int x2 = pictureBox4.Location.X;
-            int y2 = pictureBox4.Location.Y;
+            int x = pictureBox21.Location.X;
+            int y = pictureBox21.Location.Y;
             pictureBox21.Location = new Point(x, y);
         
         label2.Text = (pictureBox21.Location.Y).ToString();
 
             if (!pictureBox21.Bounds.IntersectsWith(pictureBox8.Bounds))
             {
-                while (x > 0)
+
+                    x += 1;
+                    pictureBox21.Location = new Point(x, y);
+                    label2.Text = (pictureBox21.Location.Y).ToString();
+
+               
+            }
+            else
+            {
+                while (x>0)
                 {
                     x -= 1;
                     pictureBox21.Location = new Point(x, y);
-                    label2.Text = (pictureBox4.Location.Y).ToString();
-
+                    label2.Text = (pictureBox21.Location.Y).ToString();
                 }
-               
+              
+            }
+            int x1 = pictureBox22.Location.X;
+            int y1 = pictureBox22.Location.Y;
+            pictureBox22.Location = new Point(x1, y1);
+
+            label2.Text = (pictureBox22.Location.Y).ToString();
+
+            if (!pictureBox22.Bounds.IntersectsWith(pictureBox5.Bounds))
+            {
+
+                x1-= 1;
+                pictureBox22.Location = new Point(x1, y1);
+                label2.Text = (pictureBox21.Location.Y).ToString();
+
+
+            }
+            else 
+            {
+
+                while (!pictureBox22.Bounds.IntersectsWith(pictureBox26.Bounds))
+                {
+                    x1 += 1;
+                    pictureBox22.Location = new Point(x1, y1);
+                    label2.Text = (pictureBox21.Location.Y).ToString();
+                }
+
+            }
+            int x2 = pictureBox4.Location.X;
+            int y2 = pictureBox4.Location.Y;
+            pictureBox4.Location = new Point(x2, y2);
+
+            label2.Text = (pictureBox4.Location.Y).ToString();
+
+            if (!pictureBox4.Bounds.IntersectsWith(pictureBox11.Bounds))
+            {
+
+                y2+= 1;
+                pictureBox4.Location = new Point(x2, y2);
+                label2.Text = (pictureBox4.Location.Y).ToString();
+
+
+            }
+            else
+            {
+
+                while (!pictureBox4.Bounds.IntersectsWith(pictureBox28.Bounds))
+                {
+                    y2 -= 1;
+                    pictureBox4.Location = new Point(x2, y2);
+                   
+                }
+
             }
         }
 
