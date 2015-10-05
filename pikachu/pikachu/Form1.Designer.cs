@@ -206,7 +206,7 @@
             this.pictureBox31.Image = global::pikachu.Properties.Resources.wall;
             this.pictureBox31.Location = new System.Drawing.Point(-8, 452);
             this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(244, 33);
+            this.pictureBox31.Size = new System.Drawing.Size(272, 33);
             this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox31.TabIndex = 34;
             this.pictureBox31.TabStop = false;
@@ -235,7 +235,7 @@
             // 
             this.pictureBox29.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox29.Image = global::pikachu.Properties.Resources.wallPikachu;
-            this.pictureBox29.Location = new System.Drawing.Point(-5, 115);
+            this.pictureBox29.Location = new System.Drawing.Point(-8, 0);
             this.pictureBox29.Name = "pictureBox29";
             this.pictureBox29.Size = new System.Drawing.Size(803, 485);
             this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -355,7 +355,7 @@
             // pictureBox16
             // 
             this.pictureBox16.Image = global::pikachu.Properties.Resources.beer;
-            this.pictureBox16.Location = new System.Drawing.Point(277, 395);
+            this.pictureBox16.Location = new System.Drawing.Point(315, 395);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(41, 51);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -365,7 +365,7 @@
             // pictureBox14
             // 
             this.pictureBox14.Image = global::pikachu.Properties.Resources.wall;
-            this.pictureBox14.Location = new System.Drawing.Point(232, 334);
+            this.pictureBox14.Location = new System.Drawing.Point(259, 325);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(39, 173);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -405,7 +405,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::pikachu.Properties.Resources.wall;
-            this.pictureBox10.Location = new System.Drawing.Point(232, 334);
+            this.pictureBox10.Location = new System.Drawing.Point(270, 329);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(190, 40);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -425,7 +425,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::pikachu.Properties.Resources.wall;
-            this.pictureBox8.Location = new System.Drawing.Point(143, 210);
+            this.pictureBox8.Location = new System.Drawing.Point(173, 210);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(29, 173);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -435,7 +435,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::pikachu.Properties.Resources.wall;
-            this.pictureBox7.Location = new System.Drawing.Point(248, 234);
+            this.pictureBox7.Location = new System.Drawing.Point(268, 234);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(190, 40);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -447,7 +447,7 @@
             this.pictureBox6.Image = global::pikachu.Properties.Resources.wall;
             this.pictureBox6.Location = new System.Drawing.Point(-8, 182);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(180, 38);
+            this.pictureBox6.Size = new System.Drawing.Size(210, 38);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 7;
             this.pictureBox6.TabStop = false;
@@ -564,7 +564,7 @@
             // pictureBox39
             // 
             this.pictureBox39.Image = global::pikachu.Properties.Resources.Lightning_Bolt;
-            this.pictureBox39.Location = new System.Drawing.Point(187, 200);
+            this.pictureBox39.Location = new System.Drawing.Point(208, 196);
             this.pictureBox39.Name = "pictureBox39";
             this.pictureBox39.Size = new System.Drawing.Size(28, 28);
             this.pictureBox39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -574,7 +574,7 @@
             // pictureBox40
             // 
             this.pictureBox40.Image = global::pikachu.Properties.Resources.Lightning_Bolt;
-            this.pictureBox40.Location = new System.Drawing.Point(178, 253);
+            this.pictureBox40.Location = new System.Drawing.Point(208, 253);
             this.pictureBox40.Name = "pictureBox40";
             this.pictureBox40.Size = new System.Drawing.Size(28, 28);
             this.pictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -634,7 +634,7 @@
             // pictureBox46
             // 
             this.pictureBox46.Image = global::pikachu.Properties.Resources.Lightning_Bolt;
-            this.pictureBox46.Location = new System.Drawing.Point(178, 334);
+            this.pictureBox46.Location = new System.Drawing.Point(217, 341);
             this.pictureBox46.Name = "pictureBox46";
             this.pictureBox46.Size = new System.Drawing.Size(28, 28);
             this.pictureBox46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -644,7 +644,7 @@
             // pictureBox47
             // 
             this.pictureBox47.Image = global::pikachu.Properties.Resources.Lightning_Bolt;
-            this.pictureBox47.Location = new System.Drawing.Point(187, 385);
+            this.pictureBox47.Location = new System.Drawing.Point(208, 395);
             this.pictureBox47.Name = "pictureBox47";
             this.pictureBox47.Size = new System.Drawing.Size(28, 28);
             this.pictureBox47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -714,7 +714,7 @@
             // pictureBox53
             // 
             this.pictureBox53.Image = global::pikachu.Properties.Resources.Lightning_Bolt;
-            this.pictureBox53.Location = new System.Drawing.Point(333, 385);
+            this.pictureBox53.Location = new System.Drawing.Point(377, 375);
             this.pictureBox53.Name = "pictureBox53";
             this.pictureBox53.Size = new System.Drawing.Size(28, 28);
             this.pictureBox53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
