@@ -41,12 +41,15 @@ namespace pikachu
             int y = pictureBox1.Location.Y;
             int x1 = pictureBox2.Location.X;
             int y1 = pictureBox2.Location.Y;
-            int beersX = 12;
-            int beersY = 12;
-            PictureBox[] walls = { pictureBox6, pictureBox3, pictureBox7, pictureBox8, pictureBox5, pictureBox9, pictureBox12, pictureBox13, pictureBox20, pictureBox28, pictureBox26, pictureBox25, pictureBox24, pictureBox23, pictureBox11, pictureBox14, pictureBox10 };
+            int beersX = 32;
+            int beersY =32;
+            int lightningX = 0;
+            int lightningY = 0;
+            PictureBox[] walls = { pictureBox6, pictureBox3, pictureBox7, pictureBox8, pictureBox5, pictureBox9, pictureBox12, pictureBox13, pictureBox20, pictureBox28, pictureBox26, pictureBox25, pictureBox24, pictureBox23, pictureBox11, pictureBox14, pictureBox10, pictureBox31, pictureBox30, pictureBox27 };
             PictureBox[] beers = { pictureBox15, pictureBox16, pictureBox17 };
             PictureBox[] monsters = { pictureBox21, pictureBox22, pictureBox4 };
-            PictureBox gameOver =  pictureBox29;
+            PictureBox[] lightning = { pictureBox32, pictureBox33, pictureBox34, pictureBox35, pictureBox36, pictureBox37, pictureBox38, pictureBox39, pictureBox40, pictureBox41, pictureBox42, pictureBox43, pictureBox44, pictureBox45, pictureBox46, pictureBox47, pictureBox48, pictureBox49, pictureBox50, pictureBox51, pictureBox52, pictureBox53,  pictureBox54,  pictureBox55,  pictureBox56,  pictureBox57, pictureBox58,  pictureBox59,  pictureBox60,  pictureBox61, pictureBox62, pictureBox63, pictureBox64, pictureBox65, pictureBox66};
+        PictureBox gameOver =  pictureBox29;
             if (ev.KeyCode == Keys.Right)
 
             {
@@ -83,6 +86,20 @@ namespace pikachu
                     if (pictureBox1.Bounds.IntersectsWith(monsters[i].Bounds))
                     {
                         pictureBox29.Visible = true;
+                    }
+
+                }
+                for (int i = 0; i < lightning.Length; i++)
+                {
+                    if (pictureBox1.Bounds.IntersectsWith(lightning[i].Bounds))
+                    {
+
+
+                        lightning[i].Location = new Point(lightningX, lightningY);
+
+                        pictureBox1.Location = new Point(x, y);
+                        pictureBox2.Location = new Point(x, y);
+
                     }
 
                 }
@@ -130,6 +147,34 @@ namespace pikachu
                     }
 
                 }
+                for (int i = 0; i < lightning.Length; i++)
+                {
+                    if (pictureBox1.Bounds.IntersectsWith(lightning[i].Bounds))
+                    {
+
+
+                        lightning[i].Location = new Point(lightningX, lightningY);
+                        
+                        pictureBox1.Location = new Point(x, y);
+                        pictureBox2.Location = new Point(x, y);
+
+                    }
+
+                }
+                for (int i = 0; i < lightning.Length; i++)
+                {
+                    if (pictureBox1.Bounds.IntersectsWith(lightning[i].Bounds))
+                    {
+
+
+                        lightning[i].Location = new Point(lightningX, lightningY);
+
+                        pictureBox1.Location = new Point(x, y);
+                        pictureBox2.Location = new Point(x, y);
+
+                    }
+
+                }
             }
             else if (ev.KeyCode == Keys.Up)
             {
@@ -166,6 +211,20 @@ namespace pikachu
                     {
                         pictureBox29.Visible = true;
                         
+                    }
+
+                }
+                for (int i = 0; i < lightning.Length; i++)
+                {
+                    if (pictureBox1.Bounds.IntersectsWith(lightning[i].Bounds))
+                    {
+
+
+                        lightning[i].Location = new Point(lightningX, lightningY);
+
+                        pictureBox1.Location = new Point(x, y);
+                        pictureBox2.Location = new Point(x, y);
+
                     }
 
                 }
@@ -210,6 +269,20 @@ namespace pikachu
                     }
 
                 }
+                for (int i = 0; i < lightning.Length; i++)
+                {
+                    if (pictureBox1.Bounds.IntersectsWith(lightning[i].Bounds))
+                    {
+
+
+                        lightning[i].Location = new Point(lightningX, lightningY);
+
+                        pictureBox1.Location = new Point(x, y);
+                        pictureBox2.Location = new Point(x, y);
+
+                    }
+
+                }
 
             }
 
@@ -235,7 +308,7 @@ namespace pikachu
             }
             else
             {
-                while (x>0)
+                while (x>10)
                 {
                     x -= 1;
                     pictureBox21.Location = new Point(x, y);
