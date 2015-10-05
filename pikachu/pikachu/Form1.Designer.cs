@@ -235,7 +235,7 @@
             // 
             this.pictureBox29.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox29.Image = global::pikachu.Properties.Resources.wallPikachu;
-            this.pictureBox29.Location = new System.Drawing.Point(-5, -10);
+            this.pictureBox29.Location = new System.Drawing.Point(-5, 115);
             this.pictureBox29.Name = "pictureBox29";
             this.pictureBox29.Size = new System.Drawing.Size(803, 485);
             this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
