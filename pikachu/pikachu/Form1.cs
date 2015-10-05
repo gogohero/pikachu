@@ -22,7 +22,7 @@ namespace pikachu
         private void Form1_Load(object sender, EventArgs e)
         {
             pictureBox29.Visible = false;
-            pictureBox27.Visible = false;
+           
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
 
             timer1.Enabled = true;
@@ -46,7 +46,7 @@ namespace pikachu
             PictureBox[] walls = { pictureBox6, pictureBox3, pictureBox7, pictureBox8, pictureBox5, pictureBox9, pictureBox12, pictureBox13, pictureBox20, pictureBox28, pictureBox26, pictureBox25, pictureBox24, pictureBox23, pictureBox11, pictureBox14, pictureBox10 };
             PictureBox[] beers = { pictureBox15, pictureBox16, pictureBox17 };
             PictureBox[] monsters = { pictureBox21, pictureBox22, pictureBox4 };
-            PictureBox[] gameOver = { pictureBox29, pictureBox27};
+            PictureBox gameOver =  pictureBox29;
             if (ev.KeyCode == Keys.Right)
 
             {
@@ -83,7 +83,6 @@ namespace pikachu
                     if (pictureBox1.Bounds.IntersectsWith(monsters[i].Bounds))
                     {
                         pictureBox29.Visible = true;
-                        pictureBox27.Visible = true;
                     }
 
                 }
@@ -127,7 +126,7 @@ namespace pikachu
                     if (pictureBox1.Bounds.IntersectsWith(monsters[i].Bounds))
                     {
                         pictureBox29.Visible = true;
-                        pictureBox27.Visible = true;
+                       
                     }
 
                 }
@@ -166,7 +165,7 @@ namespace pikachu
                     if (pictureBox1.Bounds.IntersectsWith(monsters[i].Bounds))
                     {
                         pictureBox29.Visible = true;
-                        pictureBox27.Visible = true;
+                        
                     }
 
                 }
@@ -207,7 +206,7 @@ namespace pikachu
                     if (pictureBox1.Bounds.IntersectsWith(monsters[i].Bounds))
                     {
                         pictureBox29.Visible = true;
-                        pictureBox27.Visible = true;
+                        
                     }
 
                 }
