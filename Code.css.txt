@@ -1,0 +1,8 @@
+  private void OnButtonKeyDown(object sender, KeyEventArgs e)
+        {
+            if ((e.Key == Key.Up) || (e.Key == Key.Down))
+            {
+                label1.Content = "da";
+                return;
+            }
+        }
