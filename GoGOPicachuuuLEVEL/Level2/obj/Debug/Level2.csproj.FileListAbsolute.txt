@@ -1,0 +1,7 @@
+D:\C#\Pikachu\pikachu-master\pikachu\Level2\bin\Debug\Level2.exe.config
+D:\C#\Pikachu\pikachu-master\pikachu\Level2\bin\Debug\Level2.exe
+D:\C#\Pikachu\pikachu-master\pikachu\Level2\bin\Debug\Level2.pdb
+D:\C#\Pikachu\pikachu-master\pikachu\Level2\obj\Debug\Level2.Properties.Resources.resources
+D:\C#\Pikachu\pikachu-master\pikachu\Level2\obj\Debug\Level2.csproj.GenerateResource.Cache
+D:\C#\Pikachu\pikachu-master\pikachu\Level2\obj\Debug\Level2.exe
+D:\C#\Pikachu\pikachu-master\pikachu\Level2\obj\Debug\Level2.pdb
