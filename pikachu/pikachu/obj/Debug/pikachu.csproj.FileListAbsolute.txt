@@ -46,3 +46,12 @@ C:\Users\Milko\Desktop\trite niva zaedno\pikachu\pikachu\bin\Debug\pikachu.exe.c
 C:\Users\Milko\Desktop\trite niva zaedno\pikachu\pikachu\obj\Debug\pikachu.exe
 C:\Users\Milko\Desktop\trite niva zaedno\pikachu\pikachu\obj\Debug\pikachu.pdb
 C:\Users\sn3ts\Documents\GitHubCommits\pikachu\pikachu\obj\Debug\pikachu.Level1.resources
+D:\C#\Pichere\pikachu\pikachu\bin\Debug\pikachu.exe.config
+D:\C#\Pichere\pikachu\pikachu\obj\Debug\pikachu.exe
+D:\C#\Pichere\pikachu\pikachu\obj\Debug\pikachu.pdb
+D:\C#\Pichere\pikachu\pikachu\bin\Debug\pikachu.exe
+D:\C#\Pichere\pikachu\pikachu\bin\Debug\pikachu.pdb
+D:\C#\Pichere\pikachu\pikachu\obj\Debug\pikachu.csprojResolveAssemblyReference.cache
+D:\C#\Pichere\pikachu\pikachu\obj\Debug\pikachu.Level1.resources
+D:\C#\Pichere\pikachu\pikachu\obj\Debug\pikachu.Properties.Resources.resources
+D:\C#\Pichere\pikachu\pikachu\obj\Debug\pikachu.csproj.GenerateResource.Cache
