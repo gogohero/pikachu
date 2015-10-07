@@ -336,10 +336,15 @@ namespace pikachu
 
         private void GogoHeroLevel(PictureBox[] walls, PictureBox[] beers, PictureBox[] monsters, PictureBox[] win)
         {
-            int x =0, y = 0;
-            
-           walls[0].Location = new Point(x, y);
+            this.Hide();
+            Level3 form2 = new Level3();
+            form2.ShowDialog();
+            form2 = null;
+            Show();
         }
+
+        
+
 
         private void Enemy()
         {
@@ -403,29 +408,18 @@ namespace pikachu
 
             if (!pictureBox4.Bounds.IntersectsWith(pictureBox11.Bounds))
             {
-
                 y2+= 1;
                 pictureBox4.Location = new Point(x2, y2);
                 label2.Text = (pictureBox4.Location.Y).ToString();
-
-
             }
             else
             {
-
                 while (!pictureBox4.Bounds.IntersectsWith(pictureBox28.Bounds))
                 {
                     y2 -= 1;
                     pictureBox4.Location = new Point(x2, y2);
-                   
                 }
-
             }
-        }
-
-        private void pictureBox29_Click(object sender, EventArgs e)
-        {
-
         }
     }
     public class Charapter

@@ -235,7 +235,7 @@
             // 
             this.pictureBox29.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox29.Image = global::pikachu.Properties.Resources.wallPikachu;
-            this.pictureBox29.Location = new System.Drawing.Point(-8, 0);
+            this.pictureBox29.Location = new System.Drawing.Point(501, 169);
             this.pictureBox29.Name = "pictureBox29";
             this.pictureBox29.Size = new System.Drawing.Size(803, 485);
             this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -474,12 +474,13 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::pikachu.Properties.Resources.wall;
-            this.pictureBox3.Location = new System.Drawing.Point(478, 99);
+            this.pictureBox3.Location = new System.Drawing.Point(478, 108);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(39, 173);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox2
             // 
@@ -999,6 +1000,11 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void pictureBox3_Click(object sender, System.EventArgs e)
+        {
+            throw new System.NotImplementedException();
         }
 
         #endregion
