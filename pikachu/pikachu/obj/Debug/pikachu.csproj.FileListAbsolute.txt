@@ -18,7 +18,6 @@ C:\Users\John\Documents\C#game\pikachu\pikachu\obj\Debug\pikachu.Properties.Reso
 C:\Users\John\Documents\C#game\pikachu\pikachu\obj\Debug\pikachu.csproj.GenerateResource.Cache
 C:\Users\sn3ts\Documents\GitHubCommits\pikachu\pikachu\bin\Debug\pikachu.exe
 C:\Users\sn3ts\Documents\GitHubCommits\pikachu\pikachu\bin\Debug\pikachu.exe.config
-C:\Users\sn3ts\Documents\GitHubCommits\pikachu\pikachu\obj\Debug\pikachu.Form1.resources
 C:\Users\sn3ts\Documents\GitHubCommits\pikachu\pikachu\obj\Debug\pikachu.Properties.Resources.resources
 C:\Users\sn3ts\Documents\GitHubCommits\pikachu\pikachu\obj\Debug\pikachu.csproj.GenerateResource.Cache
 C:\Users\sn3ts\Documents\GitHubCommits\pikachu\pikachu\obj\Debug\pikachu.exe
@@ -46,3 +45,4 @@ C:\Users\Milko\Desktop\trite niva zaedno\pikachu-master\pikachu\pikachu\obj\Debu
 C:\Users\Milko\Desktop\trite niva zaedno\pikachu\pikachu\bin\Debug\pikachu.exe.config
 C:\Users\Milko\Desktop\trite niva zaedno\pikachu\pikachu\obj\Debug\pikachu.exe
 C:\Users\Milko\Desktop\trite niva zaedno\pikachu\pikachu\obj\Debug\pikachu.pdb
+C:\Users\sn3ts\Documents\GitHubCommits\pikachu\pikachu\obj\Debug\pikachu.Level1.resources

@@ -34,3 +34,12 @@ C:\Users\sn3ts\Desktop\pikachu\pikachu\obj\Debug\pikachu.csprojResolveAssemblyRe
 C:\Users\sn3ts\Desktop\pikachu\pikachu\obj\Debug\pikachu.Form1.resources
 C:\Users\sn3ts\Desktop\pikachu\pikachu\obj\Debug\pikachu.Properties.Resources.resources
 C:\Users\sn3ts\Desktop\pikachu\pikachu\obj\Debug\pikachu.csproj.GenerateResource.Cache
+C:\Users\sn3ts\Documents\GitHubCommits\SashkoLevel\pikachu\bin\Debug\pikachu.exe.config
+C:\Users\sn3ts\Documents\GitHubCommits\SashkoLevel\pikachu\obj\Debug\pikachu.exe
+C:\Users\sn3ts\Documents\GitHubCommits\SashkoLevel\pikachu\obj\Debug\pikachu.pdb
+C:\Users\sn3ts\Documents\GitHubCommits\SashkoLevel\pikachu\bin\Debug\pikachu.exe
+C:\Users\sn3ts\Documents\GitHubCommits\SashkoLevel\pikachu\bin\Debug\pikachu.pdb
+C:\Users\sn3ts\Documents\GitHubCommits\SashkoLevel\pikachu\obj\Debug\pikachu.csprojResolveAssemblyReference.cache
+C:\Users\sn3ts\Documents\GitHubCommits\SashkoLevel\pikachu\obj\Debug\pikachu.Level3.resources
+C:\Users\sn3ts\Documents\GitHubCommits\SashkoLevel\pikachu\obj\Debug\pikachu.Properties.Resources.resources
+C:\Users\sn3ts\Documents\GitHubCommits\SashkoLevel\pikachu\obj\Debug\pikachu.csproj.GenerateResource.Cache
